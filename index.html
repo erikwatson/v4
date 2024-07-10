@@ -1,30 +1,38 @@
 <html>
-    <head>
-        <style>
-            div {
-                width: 500px;
-                height: 500px;
-                display: inline-block;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="snowfall"></div>
-        <script src="snowfall.js"></script>
-        <script>
-            const schedule = {
-                from: { month: 7, day: 1 },
-                to: { month: 8, day: 1 }
-            }
+  <head>
+    <style>
+    body{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    }
 
-            const config = {
-                gravity: {
-                    respectOrientation: true
-                }
-            }
+    div {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="snowfall"></div>
+    <script src="snowfall.js"></script>
+    <script>
+    const schedule = {
+      from: { month: 7, day: 1 },
+      to: { month: 8, day: 1 }
+    }
 
-            snowfall.schedule(schedule, config)
-        </script>
-    </body>
+    const config = {
+      gravity: {
+        respectOrientation: true
+      }
+    }
+
+    snowfall.schedule(schedule, config)
+    </script>
+  </body>
 </html>
