@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            div {
+                width: 500px;
+                height: 500px;
+                display: inline-block;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="snowfall"></div>
+        <script src="snowfall.min.js"></script>
+        <script>
+            const schedule = {
+                from: { month: 7, day: 1 },
+                to: { month: 8, day: 1 }
+            }
+
+            const config = {
+                gravity: {
+                    respectOrientation: true
+                }
+            }
+
+            snowfall.schedule(schedule, config)
+        </script>
+    </body>
+</html>
